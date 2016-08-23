@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: SmartKet
+        psr4_prefix: SmartKet
+        src_path: app
