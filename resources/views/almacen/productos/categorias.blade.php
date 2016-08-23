@@ -15,11 +15,9 @@
 			<button type="submit" class="btn btn-primary">Agregar</button>
 		</div>
 	</div>
-</section>
-<section class="row">
 	<div class="col-sm-6">
 		<table class="table table-bordered">
-			<thead style="font-weight:bold;">
+			<thead class="theadN" >
 				<tr>
 					<td>Catergoría</td>
 					<td></td>

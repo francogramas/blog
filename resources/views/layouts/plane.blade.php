@@ -13,17 +13,15 @@
 	<meta content="" name="author"/>
 
 	<link rel="stylesheet" href="{{ asset("assets/stylesheets/styles.css") }}" />
+	<link rel="stylesheet" href="{{ asset("assets/stylesheets/estilos.css") }}" />
 	<link rel="stylesheet" href="{{ asset("assets/stylesheets/themes/base/jquery-ui.css") }}" />
 
 </head>
 <body>
-	
-	
 
 	@yield('body')
 	{!! Html::script('assets/scripts/frontend.js') !!}
 	{!! Html::script('assets/scripts/jquery-ui.min.js') !!}
 	{!! Html::script('js/dropdown.js') !!}
-	
 </body>
 </html>

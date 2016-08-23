@@ -69,7 +69,7 @@
 				<div class="col-sm-12">
 				<table class="table table-condensed table-bordered table-striped">
 				<caption>Listado de terceros</caption>
-					<thead style="font-weight:bold; background-color: rgba(240, 173, 78, 0.4);"">
+					<thead class="theadN">
 						<tr>
 							<td>Nit</td>
 							<td>Terceros</td>
