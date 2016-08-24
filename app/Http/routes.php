@@ -47,7 +47,8 @@ Route::get('/inventario/consolidado', function()
 
 Route::get('/inventario/ajuste', function()
 {
-	return View::make('almacen/inventario/ajuste');
+	$date=Carbon::now()->addYears(5)->format('Y-m-d');
+	return View::make('almacen/inventario/ajuste')->with('date',$date);
 });
 
 Route::get('/inventario/agotados', function()

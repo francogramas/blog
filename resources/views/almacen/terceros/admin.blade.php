@@ -3,7 +3,7 @@
 @section('section')
 
 {!! Form::open(['route' => 'terceros.store','method'=>'POST']) !!}
-	@include('partials.message')
+
 
     <section>
 		<div class="row">

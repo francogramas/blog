@@ -9,7 +9,7 @@
 			<div class="col-sm-6">
 				<div class="form-group">
 					<label for="categoria_id">Categoría</label>
-					{!! Form::select('categoria_id', $categorias,null, ['id' => 'categoria_id','class'=>'form-control']) !!}	
+					{!! Form::select('categoria_id', $categorias,null, ['id' => 'categoria_id','class'=>'form-control']) !!}
 				</div>
 				<div class="form-group">
 					<label for="codigo">Código</label>
@@ -19,7 +19,7 @@
 				<div class="form-group">
 					<label for="nombre">Producto</label>
 					<br>
-					{!! $productos->nombre !!}				
+					{!! $productos->nombre !!}
 				</div>
 				<div class="form-group">
 					<button type="submit" class="btn btn-danger">Eliminar</button>

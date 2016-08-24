@@ -2,7 +2,6 @@
 @section('page_heading','Agregar Productos')
 @section('section')
 	{!! Form::model($productos, ['route' => ['productos.update',$productos->id],'method'=>'PUT']) !!}
-    
     <section>
 		<div class="row">
 			<div class="col-sm-6">

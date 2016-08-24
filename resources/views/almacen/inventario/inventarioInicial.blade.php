@@ -2,8 +2,6 @@
 @section('page_heading','Inventario inicial')
 @section('section')
 {!! Form::open(['route' => 'terceros.store','method'=>'POST']) !!}
-	@include('partials.message')
-
 <div class="row">
 	<div class="col-sm-6">
 		<div class="row">
@@ -15,8 +13,8 @@
 				<h5>Producto</h5>
 				{!! Form::text('prodcuto',null,['id'=>'prodcuto','required'=>'required','class'=>'form-control','placeholder'=>'prodcuto']) !!}
 			</div>
-		</div>	
-	</div>	
+		</div>
+	</div>
 	<div class="col-sm-6">
 		<div class="row">
 			<div class="col-sm-3">
@@ -35,14 +33,13 @@
 				<h5>Lote</h5>
 				{!! Form::text('lote','0000',['id'=>'lote','required'=>'required','class'=>'form-control','placeholder'=>'0000']) !!}
 			</div>
-		</div>	
+		</div>
 	</div>
 </div>
 <div class="row">
 	<div class="col-sm-2">
 		<h5>Vence</h5>
 		{!! Form::date('vence',$date,['id'=>'vence','required'=>'required','class'=>'form-control']) !!}
-		
 	</div>
 	<div class="col-sm-1">
 		<h5><br></h5>
@@ -54,17 +51,18 @@
 	</div>
 	<div class="col-sm-1">
 		<h5><br></h5>
-		<button type="submit" class="btn btn-danger" formnovalidate="formnovalidate">Cancelar</button>
+		<button type="submit" class="btn btn-warning" formnovalidate="formnovalidate">Posponer</button>
+	</div>
+	<div class="col-sm-3">
+		
 	</div>
 	<div class="col-sm-1">
-	</div>
-	<div class="col-sm-2">
 		<h4>Valor Total</h4>
 	</div>
-	<div class="col-sm-2">
+	<div class="col-sm-1">
 		<h4>Costo Total</h4>
 	</div>
-	<div class="col-sm-2">
+	<div class="col-sm-1">
 		<h4>Utilidad Neta</h4>
 	</div>
 	</div>

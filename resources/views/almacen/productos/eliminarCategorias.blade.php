@@ -10,9 +10,9 @@
 			<br>
 			{!! $categorias->nombre !!}
 		</div>
-		
+
 		<div class="form-group">
-			<button type="submit" class="btn btn-primary">Eliminar</button>			
+			<button type="submit" class="btn btn-primary">Eliminar</button>
 			<a href="{{ route('categorias.index') }}" class="btn btn-warning">Cancelar</a>
 		</div>
 

@@ -2,8 +2,6 @@
 @section('page_heading','Edición de categorías de productos')
 @section('section')
 
-
-
 {!! Form::model($categorias, ['route' => ['categorias.update',$categorias->id],'method'=>'PUT']) !!}
 <section class="row">
 	<div class="col-sm-6">

@@ -3,7 +3,6 @@
 @section('section')
 
 {!! Form::open(['route' => 'categorias.store','method'=>'POST']) !!}
-@include('partials.message')
 
 <section class="row">
 	<div class="col-sm-6">
