@@ -1,4 +1,5 @@
 <?php
+use Carbon\Carbon;
 
 /*Route::get('/panel','desktop\AdministratorController@panel');
 Route::get('/acces','desktop\AdministratorController@acces');
@@ -14,28 +15,47 @@ Route::resource('/salud','salud\saludController');*/
 Route::get('/','almacen\almacenController@home');
 Route::get('/Admterceros','almacen\almacenController@Admterceros');
 Route::get('/Admterceros','almacen\almacenController@Admterceros');
-Route::resource('/pais','general\pais');
 Route::resource('/terceros','almacen\terceros');
 Route::resource('/categorias','almacen\categoriaController');
 Route::resource('/productos','almacen\productosController');
 
 Route::get('buscar/producto', 'almacen\productosController@autocomplete');
+// End  Controladores de almacen
+
+// ---------------------- Controladores generales
+Route::resource('/pais','general\pais');
 Route::get('/departamentos/{id}','general\estadosController@getEstados');
 Route::get('/ciudades/{id}','general\ciudadesController@getCiudades');
 
 
-
-
-// End  Controladores de almacen
-
-
-Route::get('/charts', function()
+// Herramientas de inventario, son solo de consulta
+Route::get('/inventario/inicial', function()
 {
-	return View::make('mcharts');
+	$date=Carbon::now()->addYears(5)->format('Y-m-d');
+	return View::make('almacen/inventario/inventarioInicial')->with('date',$date);
 });
 
+Route::get('/inventario/disponible', function()
+{
+	return View::make('almacen/inventario/disponible');
+});
 
+Route::get('/inventario/consolidado', function()
+{
+	return View::make('almacen/inventario/consolidado');
+});
 
+Route::get('/inventario/ajuste', function()
+{
+	return View::make('almacen/inventario/ajuste');
+});
+
+Route::get('/inventario/agotados', function()
+{
+	return View::make('almacen/inventario/agotados');
+});
+
+// --------------------------------------------------------------------------
 Route::get('/tables', function()
 {
 	return View::make('table');

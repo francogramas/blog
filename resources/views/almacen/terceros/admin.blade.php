@@ -61,7 +61,7 @@
 				<div class="row" style="text-align: right;">
 					<div class="col-sm-12">
 						<br>
-						<button type="submit" class="btn btn-primary btn-lg fa fa-users" ><b> Guardar </b> </button>
+						<button type="submit" class="btn btn-primary btn-lg fa" ><b> Guardar </b> </button>
 					</div>
 				</div>
 			</div>

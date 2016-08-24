@@ -17,7 +17,7 @@ class CreateProductosTable extends Migration
         {
             $table->increments('id');
             $table->string('nombre',200);
-            $table->string('codigo',45)->unique();
+            $table->string('codigo',45) unique();
             $table->integer('categoria_id')->unsigned()->index();
 
             $table->foreign('categoria_id')->references('id')->on('categorias');

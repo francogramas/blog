@@ -286,16 +286,19 @@
                             <a href="#"><i class="fa fa-qrcode fa-fw"></i>Herramientas de inventario<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li {{ (Request::is('*panels') ? 'class="active"' : '') }}>
-                                    <a href="{{ url ('/categorias') }}">Consolidado</a>
+                                    <a href="{{ url ('/inventario/consolidado') }}">Consolidado</a>
                                 </li>
                                 <li {{ (Request::is('*buttons') ? 'class="active"' : '') }}>
-                                    <a href="{{ url ('/productos' ) }}">Disponibles</a>
+                                    <a href="{{ url ('/inventario/disponible' ) }}">Disponibles</a>
                                 </li>
                                 <li {{ (Request::is('*panels') ? 'class="active"' : '') }}>
-                                    <a href="{{ url ('/categorias') }}">Agotados</a>
+                                    <a href="{{ url ('/inventario/agotados') }}">Agotados</a>
                                 </li>
                                 <li {{ (Request::is('*buttons') ? 'class="active"' : '') }}>
-                                    <a href="{{ url ('/productos' ) }}">Inventario Inicial</a>
+                                    <a href="{{ url ('/inventario/ajuste' ) }}">Ajustes</a>
+                                </li>
+                                <li {{ (Request::is('*buttons') ? 'class="active"' : '') }}>
+                                    <a href="{{ url ('/inventario/inicial' ) }}">Inventario Inicial</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
