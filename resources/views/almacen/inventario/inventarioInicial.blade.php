@@ -9,9 +9,11 @@
 				<h5>Cantidad</h5>
 				{!! Form::number('cantidad','1',['id'=>'cantidad','required'=>'required','class'=>'form-control','placeholder'=>'Cantidad']) !!}
 			</div>
+			
 			<div class="col-sm-10">
 				<h5>Producto</h5>
-				{!! Form::text('prodcuto',null,['id'=>'prodcuto','required'=>'required','class'=>'form-control','placeholder'=>'prodcuto']) !!}
+				{!! Form::hidden('producto',null,['id'=>'producto','class'=>'form-control']) !!}				
+				{!! Form::text('buscarP',null,['id'=>'buscarP','required'=>'required','autocomplete'=>'on','class'=>'form-control','placeholder'=>'Prodcuto...']) !!}
 			</div>
 		</div>
 	</div>
@@ -56,14 +58,14 @@
 	<div class="col-sm-3">
 		
 	</div>
-	<div class="col-sm-1">
-		<h4>Valor Total</h4>
+	<div class="col-sm-2">
+		<h5>Valor Total</h5>
 	</div>
 	<div class="col-sm-1">
-		<h4>Costo Total</h4>
+		<h5>Costo Total</h5>
 	</div>
 	<div class="col-sm-1">
-		<h4>Utilidad Neta</h4>
+		<h5>Utilidad Neta</h5>
 	</div>
 	</div>
 </div>

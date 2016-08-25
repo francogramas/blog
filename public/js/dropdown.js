@@ -21,11 +21,17 @@ $(document).ready(function(){
   $(function()
   {
      $("#buscarP").autocomplete({
-      source: "buscar/producto",
-      minLength: 3,
+      source: "/buscar/producto",
+      minLength: 1,
       select: function(event, ui) {
         $('#buscarP').val(ui.item.value);
+        $('#producto').val(ui.item.id);
       }
+    });
+
+    $("#buscarP").click(function(){
+      $("#buscarP").val("");
+      $("#producto").val("0");
     });
   });
 });

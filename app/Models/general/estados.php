@@ -14,7 +14,7 @@ class estados extends Model {
 
 	public function pais(){
 		return $this -> hasmany(pais::class);
-	}	
+	}
 
 	public function ciudades(){
 		return $this -> belongsto(ciudades::class);

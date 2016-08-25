@@ -59,14 +59,13 @@
 	</div>
 	<div class="col-sm-3"></div>
 	<div class="col-sm-1">
-		<h4>Valor Total</h4>
+		<h5>Valor Total</h5>
 	</div>
 	<div class="col-sm-1">
-		<h4>Costo Total</h4>
+		<h5>Costo Total</h5>
 	</div>
 	<div class="col-sm-1">
-		<h4>Utilidad Neta</h4>
-	</div>
+		<h5>Utilidad Neta</h5>
 	</div>
 </div>
 {!! Form::close() !!}
