@@ -44,7 +44,7 @@
 					</div>
 					<div class="col-sm-4">						
     					<h5>Ciudades/Municipios</h5>
-    					{!! Form::select('ciudad', ['placeholder'=>'Seleccione la ciudad/municipio'],null,['id'=>'ciudad','class'=>'form-control']) !!}
+    					{!! Form::select('ciudad', ['0'=>'Seleccione la ciudad/municipio'],null,['id'=>'ciudad','class'=>'form-control']) !!}
 					</div>
 				</div>			
 				<div class="row">

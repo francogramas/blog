@@ -41,11 +41,11 @@
 					</div>
 					<div class="col-sm-4">
     					<h5>Estados/Departamentos</h5>
-    					{!! Form::select('departamentos',['placeholder'=>'Seleccione el estado/departamento'],null,['id'=>'departamentos','class'=>'form-control']) !!}
+    					{!! Form::select('departamentos',['0'=>'Seleccione el estado/departamento'],null,['id'=>'departamentos','class'=>'form-control']) !!}
 					</div>
 					<div class="col-sm-4">
     					<h5>Ciudades/Municipios</h5>
-    					{!! Form::select('ciudad', ['placeholder'=>'Seleccione la ciudad/municipio'],null,['id'=>'ciudad','class'=>'form-control']) !!}
+    					{!! Form::select('ciudad', ['0'=>'Seleccione la ciudad/municipio'],null,['id'=>'ciudad','class'=>'form-control']) !!}
 					</div>
 				</div>
 				<div class="row">

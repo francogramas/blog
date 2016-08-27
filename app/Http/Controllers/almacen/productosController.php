@@ -8,6 +8,8 @@ use SmartKet\Http\Requests;
 use SmartKet\Http\Controllers\Controller;
 use SmartKet\models\almacen\productos\productos;
 use SmartKet\models\almacen\productos\categorias;
+use SmartKet\http\Requests\producto\createProductoRequest;
+use SmartKet\http\Requests\producto\updateProductoRequest;
 use Session;
 
 
@@ -60,7 +62,7 @@ class productosController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(createProductoRequest $request)
     {
         //
         productos::create($request->all());
@@ -107,7 +109,7 @@ class productosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(updateProductoRequest $request, $id)
     {
         //
         $productos = productos::FindOrFail($id);

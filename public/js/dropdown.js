@@ -25,13 +25,13 @@ $(document).ready(function(){
       minLength: 1,
       select: function(event, ui) {
         $('#buscarP').val(ui.item.value);
-        $('#producto').val(ui.item.id);
+        $('#producto_id').val(ui.item.id);
       }
     });
 
     $("#buscarP").click(function(){
       $("#buscarP").val("");
-      $("#producto").val("0");
+      $("#producto_id").val("0");
     });
   });
 });

@@ -27,13 +27,8 @@ Route::resource('/pais','general\pais');
 Route::get('/departamentos/{id}','general\estadosController@getEstados');
 Route::get('/ciudades/{id}','general\ciudadesController@getCiudades');
 
+Route::resource('/inventario/inicial','almacen\inventario\inicial');
 
-// Herramientas de inventario, son solo de consulta
-Route::get('/inventario/inicial', function()
-{
-	$date=Carbon::now()->addYears(5)->format('Y-m-d');
-	return View::make('almacen/inventario/inventarioInicial')->with('date',$date);
-});
 
 Route::get('/inventario/disponible', function()
 {

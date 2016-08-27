@@ -19,6 +19,10 @@ class factura extends Model
 		return $this -> hasmany(estadoFactura::class);
 	}
 
+	public function terceros(){
+		return $this -> hasmany(terceros::class);
+	}
+
 	public function tipo(){
 		return $this -> hasmany(tipo::class);
 	}	

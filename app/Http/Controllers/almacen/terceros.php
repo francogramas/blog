@@ -9,6 +9,9 @@ use SmartKet\Http\Controllers\Controller;
 use SmartKet\models\general\pais;
 use SmartKet\models\general\estados;
 use SmartKet\models\general\ciudades;
+use SmartKet\http\Requests\tercero\createTerceroRequest;
+use SmartKet\http\Requests\tercero\updateTerceroRequest;
+
 use Session;
 
 
@@ -40,7 +43,7 @@ class terceros extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(createTerceroRequest $request)
     {
         //
         \SmartKet\models\almacen\terceros::create($request->all());
@@ -91,7 +94,7 @@ class terceros extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(updateTerceroRequest $request, $id)
     {
         //
         $terceros = \SmartKet\models\almacen\terceros::FindOrFail($id);
